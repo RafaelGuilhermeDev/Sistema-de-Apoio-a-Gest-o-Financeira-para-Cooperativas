@@ -30,18 +30,6 @@ A proposta é facilitar o acompanhamento das movimentações financeiras, o cál
 4. O saldo deve ser calculado pela diferença entre entradas e saídas.
 5. Cada cooperado deve possuir um CPF único no cadastro.
 
-## 🧾 Exemplo Prático
-
-Uma cooperada paga R$ 50,00 de mensalidade via PIX, enquanto a cooperativa paga uma conta de luz de R$ 200,00 em dinheiro.
-
-O sistema registra as duas operações e calcula o resultado:
-
-| Movimentação | Tipo | Valor |
-|---|---|---:|
-| Mensalidade | Entrada | R$ 50,00 |
-| Conta de luz | Saída | R$ 200,00 |
-| **Saldo das movimentações** | | **- R$ 150,00** |
-
 ## 🛠️ Tecnologias e Conceitos
 
 - PostgreSQL
