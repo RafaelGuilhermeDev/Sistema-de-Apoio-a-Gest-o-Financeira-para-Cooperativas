@@ -2,27 +2,58 @@
 
 ## 📌 Sobre o Projeto
 
-O Sistema de Apoio à Gestão Financeira para Cooperativas é uma aplicação desenvolvida com o objetivo de auxiliar na organização, no controle e no acompanhamento das atividades financeiras de cooperativas.
+Projeto de banco de dados desenvolvido para auxiliar no controle financeiro de cooperativas, organizando receitas, despesas e informações dos cooperados.
 
-A solução busca centralizar informações financeiras, facilitar o gerenciamento de receitas e despesas e fornecer dados que contribuam para uma gestão mais eficiente, organizada e transparente.
-
-O projeto também tem como propósito aplicar boas práticas de desenvolvimento de software, modelagem de dados e construção de APIs, utilizando tecnologias do ecossistema Java.
+A proposta é facilitar o acompanhamento das movimentações financeiras, o cálculo do saldo e a geração de relatórios, contribuindo para uma gestão mais organizada e transparente.
 
 ## 🎯 Objetivos
 
-- Facilitar o controle de receitas e despesas.
-- Organizar as movimentações financeiras da cooperativa.
-- Auxiliar no acompanhamento do fluxo de caixa.
-- Disponibilizar informações para a análise de indicadores financeiros.
-- Promover maior organização e transparência na gestão dos recursos.
-- Aplicar conceitos de desenvolvimento Back-End na construção de uma solução para um problema real.
+- Registrar entradas e saídas financeiras.
+- Organizar movimentações por categoria.
+- Identificar os cooperados envolvidos.
+- Calcular o saldo financeiro.
+- Facilitar consultas e relatórios.
 
-## 🛠️ Tecnologias
+## 🗂️ Principais Entidades
 
-à definir
+- **Cooperativa:** organização cuja gestão financeira será acompanhada.
+- **Cooperado:** associado vinculado à cooperativa.
+- **Movimentação:** registro de cada entrada ou saída financeira.
+- **Categoria:** classificação das movimentações, como mensalidades e contas de luz.
+- **Forma de Operação:** identifica como o dinheiro foi movimentado, como PIX, dinheiro ou cartão.
 
-## 📚 Propósito Educacional
+## 📋 Regras de Negócio
 
-Este projeto faz parte da minha jornada de aprendizado em desenvolvimento Back-End Java e tem como objetivo consolidar conhecimentos em desenvolvimento de APIs REST, persistência de dados, mapeamento objeto-relacional com JPA e organização de aplicações utilizando o ecossistema Spring.
+1. Cada movimentação deve conter valor, data, descrição, categoria e forma de operação.
+2. Uma movimentação deve representar uma entrada ou uma saída, nunca ambas.
+3. Toda movimentação deve estar associada a uma categoria cadastrada.
+4. O saldo deve ser calculado pela diferença entre entradas e saídas.
+5. Cada cooperado deve possuir um CPF único no cadastro.
 
-Além do aprendizado técnico, o projeto busca explorar como a tecnologia pode contribuir para resolver desafios relacionados à gestão financeira de cooperativas.
+## 🧾 Exemplo Prático
+
+Uma cooperada paga R$ 50,00 de mensalidade via PIX, enquanto a cooperativa paga uma conta de luz de R$ 200,00 em dinheiro.
+
+O sistema registra as duas operações e calcula o resultado:
+
+| Movimentação | Tipo | Valor |
+|---|---|---:|
+| Mensalidade | Entrada | R$ 50,00 |
+| Conta de luz | Saída | R$ 200,00 |
+| **Saldo das movimentações** | | **- R$ 150,00** |
+
+## 🛠️ Tecnologias e Conceitos
+
+- PostgreSQL
+- SQL
+- Modelagem relacional
+- Modelo Entidade-Relacionamento (MER)
+- Diagrama Entidade-Relacionamento (DER)
+- Chaves primárias e estrangeiras
+- Relacionamentos e cardinalidades
+
+## 📚 Propósito
+
+Aplicar conceitos de modelagem e bancos de dados relacionais na construção de uma solução voltada à organização e ao controle financeiro de cooperativas.
+
+**Status:** Em desenvolvimento.
