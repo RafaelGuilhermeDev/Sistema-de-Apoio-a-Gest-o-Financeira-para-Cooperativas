@@ -1,5 +1,4 @@
 # 💰 Sistema de Apoio à Gestão Financeira para Cooperativas
-# Integrantes: Bernardo Cesar, Luana Verdugo e Rafael Henrique
 
 ## 📌 Sobre o Projeto
 
@@ -46,3 +45,5 @@ A proposta é facilitar o acompanhamento das movimentações financeiras, o cál
 Aplicar conceitos de modelagem e bancos de dados relacionais na construção de uma solução voltada à organização e ao controle financeiro de cooperativas.
 
 **Status:** Em desenvolvimento.
+**Integrantes:** Bernardo Cesar, Luana Verdugo e Rafael Henrique
+
