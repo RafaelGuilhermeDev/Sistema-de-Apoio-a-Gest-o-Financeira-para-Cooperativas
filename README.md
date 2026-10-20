@@ -1,4 +1,5 @@
 # 💰 Sistema de Apoio à Gestão Financeira para Cooperativas
+# Integrantes: Bernardo Cesar, Luana Verdugo e Rafael Henrique
 
 ## 📌 Sobre o Projeto
 
